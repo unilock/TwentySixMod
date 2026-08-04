@@ -1,5 +1,7 @@
 package cc.unilock.twentysix;
 
+import com.bawnorton.mixinsquared.adjuster.MixinAnnotationAdjusterRegistrar;
+import com.bawnorton.mixinsquared.canceller.MixinCancellerRegistrar;
 import net.neoforged.fml.loading.FMLLoader;
 import net.neoforged.fml.loading.moddiscovery.ModFileInfo;
 import org.objectweb.asm.tree.ClassNode;
@@ -12,7 +14,8 @@ import java.util.Set;
 public class TwentySixMixin implements IMixinConfigPlugin {
 	@Override
 	public void onLoad(String mixinPackage) {
-		// NO-OP
+		MixinAnnotationAdjusterRegistrar.register(new TwentySixMixinAnnotationAdjuster());
+		MixinCancellerRegistrar.register(new TwentySixMixinCanceller());
 	}
 
 	@Override
