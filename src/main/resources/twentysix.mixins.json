@@ -1,19 +1,20 @@
 {
-	"required": true,
-	"package": "cc.unilock.twentysix.mixin",
-	"plugin": "cc.unilock.twentysix.TwentySixMixin",
-	"compatibilityLevel": "JAVA_25",
-	"mixinextras": {
-		"minVersion": "0.5.0"
-	},
-	"mixins": [
-		"enderscape.EntityMixin",
-		"minecraft.MappedRegistryMixin"
-	],
-	"client": [
-		"enderscape.GuiMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "cc.unilock.twentysix.mixin",
+  "plugin": "cc.unilock.twentysix.TwentySixMixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixinextras": {
+    "minVersion": "0.5.0"
+  },
+  "mixins": [
+    "enderscape.EntityMixin",
+    "minecraft.MappedRegistryMixin"
+  ],
+  "client": [
+    "enderscape.ClientHooksMixin",
+    "enderscape.GuiMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

@@ -13,6 +13,10 @@ public class TwentySixMixinAnnotationAdjuster implements MixinAnnotationAdjuster
 			return null;
 		}
 
+		if ("net.penumbra.enderscape.mixin.client.renderer.FogRendererMixin".equals(mixinClassName) && "Enderscape$getBrightnessDependentFogColor".equals(handlerNode.name)) {
+			return null;
+		}
+
 		if ("net.penumbra.enderscape.mixin.client.renderer.GuiMixin".equals(mixinClassName) && ("Enderscape$stopRenderingBarBackground".equals(handlerNode.name) || "Enderscape$stopRenderingBar".equals(handlerNode.name))) {
 			return null;
 		}

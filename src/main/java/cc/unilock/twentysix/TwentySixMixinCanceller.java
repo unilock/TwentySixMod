@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TwentySixMixinCanceller implements MixinCanceller {
 	private static final HashSet<String> SHOULD_CANCEL = Sets.newHashSet(
-//			"com.terraformersmc.cinderscapes.mixin.MixinAlterGroundTreeDecorator"
+//			"com.example.mod.mixin.MixinMinecraft"
 	);
 
 	@Override
