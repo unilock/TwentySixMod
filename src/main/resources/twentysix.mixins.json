@@ -22,7 +22,8 @@
   "client": [
     "enderscape.ClientHooksMixin",
     "enderscape.GuiMixin",
-    "frozenlib.MultiPlayerGameModeMixin"
+    "frozenlib.MultiPlayerGameModeMixin",
+    "frozenlib.PackRepositoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1
