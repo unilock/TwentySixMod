@@ -11,6 +11,7 @@
     "frozenlib.HopperBlockEntityMixin",
     "frozenlib.LivingEntityMixin",
     "frozenlib.MappedRegistryMixin",
+    "frozenlib.ServerPlayerGameModeMixin",
     "frozenlib.ShovelItemMixin",
     "frozenlib.accessor.HolderReferenceAccessor",
     "minecraft.MappedRegistryMixin",
@@ -20,7 +21,8 @@
   ],
   "client": [
     "enderscape.ClientHooksMixin",
-    "enderscape.GuiMixin"
+    "enderscape.GuiMixin",
+    "frozenlib.MultiPlayerGameModeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
