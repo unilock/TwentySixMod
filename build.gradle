@@ -32,6 +32,18 @@ repositories {
     exclusiveContent {
         forRepository {
             maven {
+                name = 'Sinytra'
+                url = 'https://maven.su5ed.dev/releases/'
+            }
+        }
+        filter {
+            includeGroup 'org.sinytra'
+            includeGroup 'org.sinytra.forgified-fabric-api'
+        }
+    }
+    exclusiveContent {
+        forRepository {
+            maven {
                 name = 'Sleeping Town'
                 url = 'https://repo.sleeping.town/'
             }
@@ -127,7 +139,14 @@ dependencies {
 
     implementation(jarJar('folk.sisby:kaleido-config:0.3.3+1.3.2'))
 
-    compileOnly('maven.modrinth:enderscape:KK7kzZxi')
+    compileOnly('org.sinytra:forgified-fabric-loader:2.5.85+0.19.3+26.1.2')
+    compileOnly('org.sinytra.forgified-fabric-api:forgified-fabric-api:0.155.2+26.1.2+3.5.5')
+
+    compileOnly('maven.modrinth:enderscape:N7HhWOxJ')
+    compileOnly('maven.modrinth:frozenlib:JjJtEhgO')
+    compileOnly('maven.modrinth:street-art:LOmLSgfX')
+    compileOnly('maven.modrinth:trailier-tales:Gtbx31f7')
+    compileOnly('maven.modrinth:wilder-wild:QluBtU4i')
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

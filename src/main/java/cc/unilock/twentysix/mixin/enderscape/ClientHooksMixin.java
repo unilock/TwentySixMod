@@ -17,7 +17,13 @@ import static net.penumbra.enderscape.renderer.level.EnderscapeSkybox.scaleWitho
 
 @Mixin(ClientHooks.class)
 public class ClientHooksMixin {
-	@ModifyArgs(method = "getFogColor", at = @At(value = "INVOKE", target = "Lorg/joml/Vector4f;set(FFFF)Lorg/joml/Vector4f;"))
+	@ModifyArgs(
+			method = "getFogColor",
+			at = @At(
+					value = "INVOKE",
+					target = "Lorg/joml/Vector4f;set(FFFF)Lorg/joml/Vector4f;"
+			)
+	)
 	private static void Enderscape$getBrightnessDependentFogColor(Args args) {
 		ClientLevel level = Minecraft.getInstance().level;
 		Vector3f original = new Vector3f(args.get(0), args.get(1), args.get(2));

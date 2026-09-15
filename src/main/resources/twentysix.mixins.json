@@ -8,7 +8,15 @@
   },
   "mixins": [
     "enderscape.EntityMixin",
-    "minecraft.MappedRegistryMixin"
+    "frozenlib.HopperBlockEntityMixin",
+    "frozenlib.LivingEntityMixin",
+    "frozenlib.MappedRegistryMixin",
+    "frozenlib.ShovelItemMixin",
+    "frozenlib.accessor.HolderReferenceAccessor",
+    "minecraft.MappedRegistryMixin",
+    "street_art.LevelMixin",
+    "trailiertales.ItemStackMixin",
+    "wilderwild.EntityMixin"
   ],
   "client": [
     "enderscape.ClientHooksMixin",
