@@ -16,6 +16,7 @@ public class TwentySixMixinCanceller implements MixinCanceller {
 			"net.frozenblock.trailiertales.mixin.common.coffin.ItemStackMixin",
 			"net.frozenblock.wilderwild.mixin.block.block_break.ServerPlayerGameModeMixin",
 			"net.frozenblock.wilderwild.mixin.client.block_break.MultiPlayerGameModeMixin",
+			"net.frozenblock.wilderwild.mixin.snowlogging.EntityMixin",
 			"net.frozenblock.wilderwild.mixin.warden.EntityMixin",
 			"org.quiltmc.qsl.frozenblock.core.registry.mixin.MappedRegistryMixin",
 			"org.quiltmc.qsl.frozenblock.core.registry.mixin.RegistryDataLoaderMixin",
