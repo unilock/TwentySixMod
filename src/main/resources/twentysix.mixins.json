@@ -8,6 +8,7 @@
   },
   "mixins": [
     "enderscape.EntityMixin",
+    "frozenlib.BiomeMixin",
     "frozenlib.HopperBlockEntityMixin",
     "frozenlib.LivingEntityMixin",
     "frozenlib.MappedRegistryMixin",
@@ -17,7 +18,8 @@
     "minecraft.MappedRegistryMixin",
     "street_art.LevelMixin",
     "trailiertales.ItemStackMixin",
-    "wilderwild.EntityMixin"
+    "wilderwild.EntityMixin",
+    "wilderwild.SonicBoomMixin"
   ],
   "client": [
     "enderscape.ClientHooksMixin",

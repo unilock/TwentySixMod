@@ -13,6 +13,7 @@ public class TwentySixMixinCanceller implements MixinCanceller {
 			"net.frozenblock.lib.block.mixin.storage.hopper.HopperBlockEntityMixin",
 			"net.frozenblock.lib.item.mixin.shovel.ShovelItemMixin",
 			"net.frozenblock.lib.resource_pack.mixin.client.PackRepositoryMixin",
+			"net.frozenblock.lib.worldgen.biome.mixin.BiomeMixin",
 			"net.frozenblock.trailiertales.mixin.common.coffin.ItemStackMixin",
 			"net.frozenblock.wilderwild.mixin.block.block_break.ServerPlayerGameModeMixin",
 			"net.frozenblock.wilderwild.mixin.client.block_break.MultiPlayerGameModeMixin",
