@@ -17,8 +17,10 @@
     "frozenlib.accessor.HolderReferenceAccessor",
     "minecraft.MappedRegistryMixin",
     "street_art.LevelMixin",
+    "trailiertales.EventHooksMixin",
     "trailiertales.ItemStackMixin",
     "wilderwild.EntityMixin",
+    "wilderwild.CommonHooksMixin",
     "wilderwild.SonicBoomMixin"
   ],
   "client": [

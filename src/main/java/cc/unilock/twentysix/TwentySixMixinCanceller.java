@@ -9,7 +9,6 @@ import java.util.List;
 public class TwentySixMixinCanceller implements MixinCanceller {
 	private static final HashSet<String> SHOULD_CANCEL = Sets.newHashSet(
 			"com.streetart.mixin.LevelMixin",
-			"net.frozenblock.lib.block.mixin.friction.LivingEntityMixin",
 			"net.frozenblock.lib.block.mixin.storage.hopper.HopperBlockEntityMixin",
 			"net.frozenblock.lib.item.mixin.shovel.ShovelItemMixin",
 			"net.frozenblock.lib.resource_pack.mixin.client.PackRepositoryMixin",

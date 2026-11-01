@@ -4,6 +4,7 @@ import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import com.llamalad7.mixinextras.sugar.Local;
+import net.frozenblock.wilderwild.block.MesogleaBlock;
 import net.frozenblock.wilderwild.block.impl.SnowloggingUtils;
 import net.frozenblock.wilderwild.config.WWEntityConfig;
 import net.minecraft.core.BlockPos;
@@ -18,6 +19,18 @@ import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(Entity.class)
 public class EntityMixin {
+	@WrapOperation(
+			method = "getBlockSpeedFactor",
+			at = @At(
+					value = "INVOKE",
+					target = "Lnet/minecraft/world/level/block/state/BlockState;is(Ljava/lang/Object;)Z",
+					ordinal = 1
+			)
+	)
+	public boolean wilderWild$isBubbleColumnOrMesogleaColumn(BlockState state, Object block, Operation<Boolean> operation) {
+		return operation.call(state, block) || MesogleaBlock.hasBubbleColumn(state);
+	}
+
 	@WrapOperation(
 			method = "spawnSprintParticle",
 			at = @At(
